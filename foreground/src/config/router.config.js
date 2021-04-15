@@ -23,23 +23,32 @@ export const asyncRouterMap = [
         component: () => import('@/views/dashboard/Workplace'),
         meta: { title: '词句积累', icon: bxAnaalyse, permission: ['dashboard'] }
       },
-      // forms
+      // write
       {
-        path: '/form/base-form',
-        name: 'form',
+        path: '/write',
+        name: 'write',
         // redirect: '/form/base-form',
         // component: RouteView,
-        component: () => import('@/views/form/basicForm'),
+        component: () => import('@/views/write/upload'),
         meta: { title: '作文评分', icon: 'form', permission: ['form'] }
       },
-      // list
+      // dictionary
       {
-        path: '/list/table-list',
+        path: '/dictionary',
+        name: 'fdictionary',
+        // redirect: '/form/base-form',
+        // component: RouteView,
+        component: () => import('@/views/dictionary'),
+        meta: { title: '词典大全', icon: 'read', permission: ['form'] }
+      },
+      // skill
+      {
+        path: '/skill',
         name: 'list',
         // component: RouteView,
-        component: () => import('@/views/list/search/SearchLayout'),
+        component: () => import('@/views/skill'),
         // redirect: '/list/table-list',
-        meta: { title: '写作技巧', icon: 'table', permission: ['table'] }
+        meta: { title: '写作技巧', icon: 'rise', permission: ['table'] }
         // children: [
         //   {
         //     path: '/list/table-list/:pageNo([1-9]\\d*)?',
