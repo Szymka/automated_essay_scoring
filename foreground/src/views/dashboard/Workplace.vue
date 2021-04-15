@@ -115,12 +115,7 @@
                 <a-list-item-meta>
                   <a-avatar slot="avatar" :src="item.user.avatar"/>
                   <div slot="title">
-                    <!-- 楼市调控：尊重市场供需规律 | 经济学人 -->
-                    <!-- <span>{{ item.user.nickname }}</span>&nbsp;
-                    在&nbsp; -->
                     <a href="#" style="color:black">{{ item.project.name }}</a>&nbsp;
-                    <!-- <span>{{ item.project.action }}</span>&nbsp;
-                    <a href="#">{{ item.project.event }}</a> -->
                   </div>
                   <div slot="description">{{ item.time }}</div>
                 </a-list-item-meta>
